@@ -1,35 +1,21 @@
 {
-  "name": "qaproject",
+  "name": "qatest",
   "version": "1.0.0",
-  "description": "teste de qa para a stefanini",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js"
+    "test": "cucumber-js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ludmilateixeira/qaproject.git"
-  },
-  "keywords": [
-    "teste",
-    "qa",
-    "selenium"
-  ],
-  "author": "Ludmila Teixeira",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ludmilateixeira/qaproject/issues"
-  },
-  "homepage": "https://github.com/ludmilateixeira/qaproject#readme",
-  "dependencies": {
-    "chai": "^1.10.0",
-    "chai-as-promised": "^4.1.1",
-    "chromedriver": "^2.12.0",
-    "cucumber": "^7.0.0-rc.0",
-    "mocha": "^2.0.1",
-    "selenium-webdriver": "^2.44.0"
-  },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.0.0-rc.0"
+    "cucumber": "^7.0.0-rc.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^85.0.1",
+    "mocha": "^8.1.3",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }

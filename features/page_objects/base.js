@@ -6,7 +6,8 @@ let o = new chrome.Options();
 o.addArguments('disable-infobars');
 o.setUserPreferences({ credential_enable_service: false });
 
-var Page = function() {
+var Page = function() 
+{
     this.driver = new Builder()
         .setChromeOptions(o)
         .forBrowser('chrome')
@@ -28,6 +29,15 @@ var Page = function() {
     this.findByName = async function(name) {
         await this.driver.wait(until.elementLocated(By.name(name)), 15000, 'Looking for element');
         return await this.driver.findElement(By.name(name));
+    };
+
+    this.findByClasse = async function(classe) {
+        await this.driver.wait(until.elementLocated(By.className(classe)), 15000, 'Looking for element');
+        return await this.driver.findElement(By.className(classe));
+    };
+
+    this.click = async function (el) {
+        return await el.click(el);
     };
 
     this.write = async function (el, txt) {

@@ -1,5 +1,6 @@
 module.exports = {
    usuario: 'form_usuario',
    senha: 'form_senha',
-   nome: 'form_nome'
+   nome: 'form_nome',
+   enviar: 'btn btn-info'
 };

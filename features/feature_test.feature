@@ -1,6 +1,7 @@
+#language:pt
+
 # Tela 0001 
 
-#language:pt
 
 Funcionalidade: Enviar os dados na tela Iniciando Na Automacao de Testes
 
@@ -20,18 +21,19 @@ Cenário: Digitar o campo Senha para exibir os caracteres de forma mascarada, pa
     Quando eu preencher o campo de senha
     Então o campo irá ocultar os valores digitados
 
-# @ValidarNome
+@ValidarNome
 
-# Cenário: Informar um Nome para validar nos campos de textos
+Cenário: Informar um Nome para validar nos campos de textos
 
-#     Dado que eu acesse a pagina inicial do sistema
-#     Então o campo de Nome deve ser exibido vazio, para que eu possa preencher
+    Dado que eu acesse a pagina inicial do sistema
+    Então o campo de Nome deve ser exibido vazio, para que eu possa preencher
 
-# @ValidarEnviarFalha
-# Cenário: Mostrar mensagem de falha ao apertar o botao Enviar sem os dados preenchidos
-#     Dado que eu acione o botao enviar
-#     E o campo Usuario esteja vazio
-#     Então eu verei uma mensagem de falha solicitando que eu preencha este campo
+@ValidarEnviarFalha
+
+Cenário: Mostrar mensagem de falha ao apertar o botao Enviar sem os dados preenchidos
+    Dado que eu acione o botao enviar
+    E o campo Usuario esteja vazio
+    Então eu verei uma mensagem de falha solicitando que eu preencha este campo
 
 # @ValidarEnviarSucesso
 
